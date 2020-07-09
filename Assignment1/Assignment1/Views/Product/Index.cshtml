@@ -1,0 +1,34 @@
+﻿@model List< Assignment1.Models.Product>
+
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<a href ="Create">Create</a>
+<div class ="Container">
+    <h1> Products</h1>
+      <table class ="table table-bordered table-responsive" style="height:auto">
+        <tr>
+            
+                <th> Products List</th> 
+           
+        </tr>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Pname</td>
+                   
+                </tr>
+            }
+
+
+
+
+
+        </table>
+    
+
+
+ </div>
