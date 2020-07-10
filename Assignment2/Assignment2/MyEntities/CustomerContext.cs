@@ -11,7 +11,7 @@ namespace Assignment2.MyEntities
         public DbSet<Customer> Customers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=SOCDNET37;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            optionsBuilder.UseSqlServer(@"Data Source=SOCDNET37;Initial Catalog=CustomerDB;User ID=sa;Password=pass@word1");
         }
     }
 }

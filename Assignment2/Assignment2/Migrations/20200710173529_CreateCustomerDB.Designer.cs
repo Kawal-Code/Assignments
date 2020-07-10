@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Assignment2.Migrations
 {
     [DbContext(typeof(CustomerContext))]
-    [Migration("20200709173728_Database")]
-    partial class Database
+    [Migration("20200710173529_CreateCustomerDB")]
+    partial class CreateCustomerDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,7 +45,7 @@ namespace Assignment2.Migrations
 
                     b.HasKey("Cid");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customer");
                 });
 #pragma warning restore 612, 618
         }

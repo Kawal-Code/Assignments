@@ -43,7 +43,7 @@ namespace Assignment2.Migrations
 
                     b.HasKey("Cid");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customer");
                 });
 #pragma warning restore 612, 618
         }
