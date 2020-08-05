@@ -1,0 +1,18 @@
+<p>employee works!</p>
+<h1>Employee Details</h1>
+<div class="Container">
+    <table class ="table tablebordered">
+        <tr>
+            <th>ID</th><th>Name</th><th>Designation</th><th>DOJ</th><th>Salary</th>
+        </tr>
+        <tr *ngFor = "let item of list">
+            <td>{{item.eid}}</td>
+            <td>{{item.ename}}</td>
+            <td>{{item.designation}}</td>
+            <td>{{item.joinDate|date}}</td>
+            <td>{{item.salary}}</td>
+
+
+        </tr>
+    </table>
+</div>

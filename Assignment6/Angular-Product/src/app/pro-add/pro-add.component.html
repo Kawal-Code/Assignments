@@ -1,0 +1,50 @@
+
+<h1>
+    Product Details
+</h1><div class="container">
+    <table class ="table table-bordered" style ="width : 300px;">
+        <tr>
+            <td>ID</td>
+            <td> <input type=" text" [(ngModel)] ="pid" /></td>
+        </tr>
+        <tr>
+            <td>ProductName</td>
+            <td> <input type=" text" [(ngModel)] ="pname" /></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td> <input type=" text" [(ngModel)] ="price" /></td>
+        </tr>
+        <tr>
+            <td>Stock</td>
+            <td> <input type=" text" [(ngModel)] ="stock" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class ="btn-primary"(click)="validate()">Add</button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<div>
+    <table class ="table table-bordered" style ="width:300px;">
+       
+            <tr>
+              <th>Id</th> <th>ProductName</th> <th>Price</th> <th>Stock</th>
+            </tr>  
+            
+        
+        <tbody>
+            <tr *ngFor="let item of prolist">
+                <td>{{this.item.pid}}</td>
+                <td>{{this.item.pname}}</td>
+                <td>{{this.item.price| currency: 'USD': true}}</td>
+                <td>{{this.item.stock}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+  
